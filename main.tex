@@ -2,6 +2,7 @@
 
 % Import graphics library
 \usepackage{graphicx}
+\graphicspath{{images/}} %configuring the graphicx package
 
 
 \title{Test document}
@@ -19,6 +20,22 @@ Some normal text
 \textbf{\textit{more text}}
 \emph{This is also cool}
 
+% default image
+\includegraphics{img1}  
+
+% labeled image
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.75\textwidth]{img1}
+    \caption{A nice plot.}
+    \label{fig:mesh1}
+\end{figure}
+
+% bullet list
+\begin{itemize}
+\item First point
+\item Next point
+\end{itemize}
 
 
 \end{document}
